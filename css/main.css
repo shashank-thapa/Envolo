@@ -10,5 +10,142 @@ body, html {
 body {
   margin: 0;
   padding: 0;
+  font-family: "Montserrat",sans-serif;
+  color: #393939;
+}
+
+ul {
+  list-style: none;
+}
+
+.body-main {
+  overflow-x: hidden;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1em 2em 1em;
+  margin: 0 5% 0;
+  background-color: transparent;
+}
+
+nav .nav-logo {
+  width: 15em;
+  position: relative;
+}
+
+nav .nav-logo img {
+  position: absolute;
+  top: 50%;
+  width: 7em;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+nav .nav-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .nav-ul li {
+  margin-left: 1em;
+}
+
+nav .nav-ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+nav .nav-ul li a:hover {
+  color: #393939;
+}
+
+.hero-main {
+  background-image: url(../images/header-background.jpg);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  z-index: -1;
+  background-size: cover;
+}
+
+.hero-main .turquoise {
+  color: #00BFD8;
+}
+
+.hero-main .hero-banner-container {
+  padding: 10% 7% 10%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.hero-main p {
+  overflow-wrap: break-word;
+}
+
+.hero-main .main-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  -webkit-column-gap: 4em;
+          column-gap: 4em;
+  overflow: hidden;
+}
+
+.hero-main .hero-text-container {
+  position: relative;
+}
+
+.hero-main .hero-text {
+  font-size: 1em;
+  height: 30em;
+  width: 90%;
+  margin-bottom: -5em;
+  text-align: left;
+}
+
+.hero-main .hero-text .text-container-hero {
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  top: 50%;
+}
+
+.hero-main .hero-text .hero-btn {
+  padding: 1em 4em;
+  background-color: #00BFD8;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 1px solid #00BFD8;
+  cursor: pointer;
+  margin-top: 1em;
+  border-radius: 30px;
+  margin-bottom: 4em;
+}
+
+.hero-main .hero-text .hero-btn:hover {
+  border: 2px solid #00BFD8;
+  color: #00BFD8;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  outline: none;
+}
+
+.hero-main .hero-image img {
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */
