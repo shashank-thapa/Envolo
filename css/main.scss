@@ -17,6 +17,10 @@ body{
     color: $fontCol;
 }
 
+a{
+    color:$fontCol;
+}
+
 i{
     color:$primaryCol;
     margin-right: 1em;
@@ -329,6 +333,68 @@ nav{
                 transition: 0.3s ease-in-out;
                 outline: none;
             }
+        }
+    }
+}
+
+.form-main{
+    padding:0 5% 8%;
+    background-color:#F9FAFC;
+    width: 100%;
+
+    ul{
+        padding: 0;
+        line-height: 1.7em;
+    }
+
+    .form-main-container{
+        padding: 0 8% 0;
+        display: grid;
+        margin:0 auto;
+        padding-top:5em;
+        grid-template-columns: repeat(2,auto);
+        column-gap: 5em;
+        width: 85%;
+    }
+
+    button{
+        padding: 1em 3em;
+        background-color: $primaryCol;
+        color:white;
+        font-weight: 600;
+        text-transform: uppercase;
+        border: 2px solid $primaryCol;
+        cursor: pointer;
+        margin-top: 1em;
+        outline: none;
+        border-radius:30px;
+        margin-bottom: 1em;
+    }
+
+    button:hover{
+        border: 2px solid $primaryCol;
+        color: $primaryCol;
+        outline: none;
+        background-color: rgba(0,0,0,0);
+        transition: 0.3s ease-in-out;
+        outline: none;
+    }
+
+    .form-fill-main-container{
+
+        .form-fill-ul{
+            input{
+                width: 100%;
+                margin-bottom:2em;
+                height:4em;
+            }
+        }
+
+        button{
+            margin-top:3em;
+            height: 3rem;
+            width: 100%;
+            border-radius:20px;
         }
     }
 }
