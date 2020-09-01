@@ -17,6 +17,10 @@ body{
     color: $fontCol;
 }
 
+.fa-times{
+    color:$fontCol;
+}
+
 a{
     color:$fontCol;
 }
@@ -28,6 +32,7 @@ i{
 
 ul{
     list-style:none;    
+    padding:0;
 }
 
 .body-main{
@@ -352,7 +357,7 @@ nav{
         display: grid;
         margin:0 auto;
         padding-top:5em;
-        grid-template-columns: repeat(2,auto);
+        grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
         column-gap: 5em;
         width: 85%;
     }
@@ -395,6 +400,69 @@ nav{
             height: 3rem;
             width: 100%;
             border-radius:20px;
+        }
+    }
+}
+
+.testimonials-main{
+    background-image: url(../images/testimonials-background.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    .testimonials-main-container{
+        padding:8% 5% 8%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+        width: 100%;
+
+        .testimonials-image{
+            
+            display: flex;
+
+                img{
+                    margin:auto;
+                    width: 75%;
+                }
+
+        }
+
+        .testimonials-slider{
+            text-align: center;
+            
+
+            .testimonials-slider-ul{
+                    
+
+                .testimonials-image-container{
+                    display: grid;
+                    place-items: center;
+                    width: 100%;
+                    
+                    img{
+                        width: 10em;
+                        border-radius: 50px;
+                    }
+                }
+
+                li{
+
+                    .testimonials-text{
+                        display: grid;
+                        place-items: center;
+
+                        p{
+                            width: 50%;
+                        }
+
+                        .author{
+                            font-weight: bold;
+                        }
+
+                    }
+                    
+                }
+            
+            }
         }
     }
 }

@@ -14,6 +14,10 @@ body {
   color: #393939;
 }
 
+.fa-times {
+  color: #393939;
+}
+
 a {
   color: #393939;
 }
@@ -25,6 +29,7 @@ i {
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 .body-main {
@@ -378,8 +383,8 @@ nav .nav-ul li a:hover {
   display: grid;
   margin: 0 auto;
   padding-top: 5em;
-  -ms-grid-columns: (auto)[2];
-      grid-template-columns: repeat(2, auto);
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   -webkit-column-gap: 5em;
           column-gap: 5em;
   width: 85%;
@@ -420,5 +425,61 @@ nav .nav-ul li a:hover {
   height: 3rem;
   width: 100%;
   border-radius: 20px;
+}
+
+.testimonials-main {
+  background-image: url(../images/testimonials-background.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.testimonials-main .testimonials-main-container {
+  padding: 8% 5% 8%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  width: 100%;
+}
+
+.testimonials-main .testimonials-main-container .testimonials-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.testimonials-main .testimonials-main-container .testimonials-image img {
+  margin: auto;
+  width: 75%;
+}
+
+.testimonials-main .testimonials-main-container .testimonials-slider {
+  text-align: center;
+}
+
+.testimonials-main .testimonials-main-container .testimonials-slider .testimonials-slider-ul .testimonials-image-container {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
+
+.testimonials-main .testimonials-main-container .testimonials-slider .testimonials-slider-ul .testimonials-image-container img {
+  width: 10em;
+  border-radius: 50px;
+}
+
+.testimonials-main .testimonials-main-container .testimonials-slider .testimonials-slider-ul li .testimonials-text {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.testimonials-main .testimonials-main-container .testimonials-slider .testimonials-slider-ul li .testimonials-text p {
+  width: 50%;
+}
+
+.testimonials-main .testimonials-main-container .testimonials-slider .testimonials-slider-ul li .testimonials-text .author {
+  font-weight: bold;
 }
 /*# sourceMappingURL=main.css.map */
